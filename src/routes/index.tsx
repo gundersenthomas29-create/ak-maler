@@ -4,7 +4,7 @@ import { tjenester } from "@/data/tjenester";
 import { TjenesteKort } from "@/components/TjenesteKort";
 import { Typewriter } from "@/components/Typewriter";
 import { useReveal } from "@/components/useReveal";
-const heroVideo = { url: "https://videos.pexels.com/video-files/8534456/8534456-hd_1920_1080_25fps.mp4" };
+import heroVideo from "@/assets/hero.mp4";
 const interior1 = { url: "https://images.pexels.com/photos/1740756/pexels-photo-1740756.jpeg?auto=compress&cs=tinysrgb&w=1200" };
 const interior2 = { url: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200" };
 const interior3 = { url: "https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg?auto=compress&cs=tinysrgb&w=1200" };
@@ -47,7 +47,7 @@ function Home() {
       {/* HERO */}
       <section style={{ position: "relative", height: "100vh", width: "100%", overflow: "hidden" }}>
         <video
-          src={heroVideo.url}
+          src={heroVideo}
           autoPlay
           muted
           loop
